@@ -5,9 +5,7 @@
 import mongoose from "mongoose";
 import { SEED_EXERCISES } from "../src/data/exercises-seed";
 
-const MONGODB_URI =
-  process.env.MONGODB_URI ||
-  "mongodb+srv://KaalaAadmi:KaalaAadmi@cluster0.jklca.mongodb.net/flex-appeal";
+const MONGODB_URI = process.env.MONGODB_URI || "";
 
 async function seed() {
   console.log("Connecting to MongoDB...");
